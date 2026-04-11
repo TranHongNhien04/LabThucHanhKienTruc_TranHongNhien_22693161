@@ -1,0 +1,19 @@
+services:
+  db-server:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: myuser  
+      MYSQL_PASSWORD: mypassword
+    ports:
+      - "3306:3306"
+
+  ui-manager:
+    image: phpmyadmin
+    environment:
+      PMA_HOST: db-server
+    depends_on:
+      - db-server
+    ports:
+      - "8081:80"

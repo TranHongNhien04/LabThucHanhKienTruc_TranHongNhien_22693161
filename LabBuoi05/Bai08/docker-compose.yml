@@ -1,0 +1,19 @@
+services:
+  db-server:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: mydb
+      MYSQL_USER: root
+      MYSQL_PASSWORD: rootpassword
+    ports:
+      - "3306:3306"
+  node-app:
+    build: .
+    depends_on:
+      - db-server
+    environment:
+      DB_HOST: db-server
+    ports:
+      - "3000:3000"
+    
