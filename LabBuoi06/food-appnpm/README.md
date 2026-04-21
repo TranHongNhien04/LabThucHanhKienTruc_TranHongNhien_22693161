@@ -1,3 +1,16 @@
+Bài Buổi 5 — SERVICE-BASED ARCHITECTURE
+Bài toán: Mini Food Ordering System
+Một công ty muốn xây dựng hệ thống đặt món ăn nội bộ cho nhân viên (giống
+ShopeeFood mini).
+Thực hiện: Nhóm 07
+Thành viên:
+1. Trần Hồng Nhiên
+2. Nguyễn Ngọc Hồng Minh
+3. Lê Mẫn Khi
+4. Võ Đăng Khoa
+5. Nguyễn Quốc Huy
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
